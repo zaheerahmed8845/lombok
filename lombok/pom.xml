@@ -11,8 +11,12 @@
 	<groupId>com.example</groupId>
 	<artifactId>lombok</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>lombok</name>
 	<description>Demo project for lombok</description>
+	<modules>
+		<module>lombok-getter-setter-example</module>
+	</modules>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
