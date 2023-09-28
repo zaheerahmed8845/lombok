@@ -31,3 +31,4 @@ Difference between @Data and @Value annotation:
 | Does not make fields final.                                                                                                 | Makes all non-static fields final.                                                                                                        |
 | Generates setters and getters. No getters/setters are generated for static fields and no setters generate for final fields. | No setters generate for any filed as it makes all fields final except static fields, and obviously no getters generate for static fileds. |
 
+Ref Link: https://javabydeveloper.com/lombok-value-annotation-examples/
