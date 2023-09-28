@@ -23,6 +23,7 @@
 	</modules>
 	<properties>
 		<java.version>17</java.version>
+		<lombok.maven.version>1.18.20.0</lombok.maven.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -47,6 +48,31 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+
+			<plugin>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok-maven-plugin</artifactId>
+				<version>${lombok.maven.version}</version>
+				<executions>
+					<execution>
+						<phase>generate-sources</phase>
+						<goals>
+							<goal>delombok</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<addOutputDirectory>false</addOutputDirectory>
+					<sourceDirectory>src/main/java</sourceDirectory>
+					<verbose>true</verbose>
+					<outputDirectory>target/lombok/delombok</outputDirectory>
+					<formatPreferences>
+						<generateDelombokComment>skip</generateDelombokComment>
+						<javaLangAsFQN>skip</javaLangAsFQN>
+						<suppressWarnings>skip</suppressWarnings>
+					</formatPreferences>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
