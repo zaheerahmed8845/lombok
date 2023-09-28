@@ -11,5 +11,6 @@ public class Application {
         exampleEntity.setValue2("Test 1");
         System.out.println(exampleEntity.getValue1());
         System.out.println(exampleEntity.getValue2());
+        System.out.println(exampleEntity.toString());
     }
 }

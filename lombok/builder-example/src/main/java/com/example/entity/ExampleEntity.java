@@ -7,7 +7,7 @@ import lombok.Getter;
 @Getter
 public class ExampleEntity {
 
-    private Integer value1;
+    private final Integer value1;
 
-    private String value2;
+    private final String value2;
 }
