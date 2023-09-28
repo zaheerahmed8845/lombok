@@ -63,10 +63,11 @@
 					</execution>
 				</executions>
 				<configuration>
+					<!-- Put delombok files in different folder than generated-sources, because Intellij tries to include that in sources which causes duplicates -->
 					<addOutputDirectory>false</addOutputDirectory>
+					<outputDirectory>target/lombok/delombok</outputDirectory>
 					<sourceDirectory>src/main/java</sourceDirectory>
 					<verbose>true</verbose>
-					<outputDirectory>target/lombok/delombok</outputDirectory>
 					<formatPreferences>
 						<generateDelombokComment>skip</generateDelombokComment>
 						<javaLangAsFQN>skip</javaLangAsFQN>
