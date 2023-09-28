@@ -1,11 +1,11 @@
 package com.example.entity;
 
+import lombok.Builder;
 import lombok.Getter;
-import lombok.Setter;
 
+@Builder
 @Getter
-@Setter
-public class FirstEntity {
+public class ExampleEntity {
 
     private Integer value1;
 
