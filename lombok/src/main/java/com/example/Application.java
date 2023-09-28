@@ -5,7 +5,7 @@ import com.example.entity.FirstEntity;
 public class Application {
 
     public static void main(String[] args) {
-        System.out.println("Inside Lambok Tutorial");
+        System.out.println("Inside Lombok Tutorial");
         FirstEntity firstEntity = new FirstEntity();
         firstEntity.setValue1(1);
         firstEntity.setValue2("Test 1");
