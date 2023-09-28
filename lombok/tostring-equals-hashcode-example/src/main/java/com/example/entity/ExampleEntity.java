@@ -1,10 +1,8 @@
 package com.example.entity;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
-@Getter
-@Setter
+@Data
 public class ExampleEntity {
 
     private Integer value1;

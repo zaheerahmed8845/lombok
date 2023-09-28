@@ -8,7 +8,6 @@ import java.util.Set;
 public class Application {
 
     public static void main(String[] args) {
-
         System.out.println("Inside Lombok Tutorial");
         ExampleEntity exampleEntity1 = new ExampleEntity();
         exampleEntity1.setValue1(1);
@@ -26,5 +25,7 @@ public class Application {
         exampleEntitySet.add(exampleEntity2);
 
         System.out.println("Set Size : " + exampleEntitySet.size());
+
+
     }
 }

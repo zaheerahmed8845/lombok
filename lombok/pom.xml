@@ -17,6 +17,8 @@
 	<modules>
 		<module>getter-setter-example</module>
 		<module>builder-example</module>
+		<module>tostring-equals-hashcode-example</module>
+		<module>data-and-value-example</module>
 	</modules>
 	<properties>
 		<java.version>17</java.version>
