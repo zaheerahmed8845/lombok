@@ -3,11 +3,11 @@
 
 * It is equivalent to:
 
-- @Getter
-- @Setter
-- @RequiredArgsConstructor
-- @ToString
-- @EqualsAndHashCode
+  - @Getter
+  - @Setter
+  - @RequiredArgsConstructor
+  - @ToString
+  - @EqualsAndHashCode
 
 @Value:
 -------
